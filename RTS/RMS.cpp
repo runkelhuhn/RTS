@@ -106,16 +106,17 @@ float RMS::getResponseTime(Task t, list<Task> hpTasks)
 		Task next = hpTasks.back();
 		hpTasks.remove(next);
 		float lastResponseTime = getResponseTime(next, hpTasks);
+		hpTasks.push_back(next);
 		return getResponseTime(t, hpTasks, lastResponseTime);
 	}
 }
 
 float RMS::getResponseTime(Task t, list<Task> hpTasks, float lastResponseTime)
 {
-	float previousCombined = 0;
+	float previousCombined = 0.0;
 	for (auto& hpTask : hpTasks)
 	{
-		previousCombined += ceil(lastResponseTime / hpTask.getPeriod()) + hpTask.getcompTime();
+		previousCombined += ceil((float) lastResponseTime / (float) hpTask.getPeriod()) * (float) hpTask.getcompTime();
 	}
 	return t.getcompTime() + previousCombined;
 }
