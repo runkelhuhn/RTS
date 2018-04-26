@@ -1,0 +1,7 @@
+﻿  RMS.cpp
+c:\users\hso-gi_tva2\documents\visual studio 2015\projects\rts\rts\rms.cpp(91): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\hso-gi_tva2\documents\visual studio 2015\projects\rts\rts\rms.cpp(92): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\hso-gi_tva2\documents\visual studio 2015\projects\rts\rts\rms.cpp(103): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+c:\users\hso-gi_tva2\documents\visual studio 2015\projects\rts\rts\rms.cpp(150): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  RTS.vcxproj -> C:\Users\hso-gi_tva2\Documents\Visual Studio 2015\Projects\RTS\Debug\RTS.exe
+  RTS.vcxproj -> C:\Users\hso-gi_tva2\Documents\Visual Studio 2015\Projects\RTS\Debug\RTS.pdb (Partial PDB)
